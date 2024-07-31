@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="CSS/signup.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <form action="" id="signupForm" onsubmit="signup()">
+      <div>
+        <i class="fa fa-user"></i>
+        <input
+          type="text"
+          class="username"
+          name="username"
+          id="username"
+          placeholder="Username"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div>
+        <i class="fa fa-lock"></i>
+        <input
+          type="password"
+          class="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          autocomplete="off"
+          required
+        />
+        <i class="fa-solid fas fa-eye-slash" id="eye"></i>
+      </div>
+      <div id="confirmpasswordDiv">
+        <i class="fa fa-lock" id="icon"></i>
+        <input
+          type="password"
+          class="confirmpassword"
+          name="confirmpassword"
+          id="confirmpassword"
+          placeholder="Confirm Password"
+          autocomplete="off"
+          required
+        />
+        <i class="fa-solid fas fa-eye-slash" id="eye1"></i>
+        <p id="notmatch"></p>
+      </div>
+      <div>
+        <i class="fa-solid fa-envelope"></i>
+        <input
+          type="email"
+          class="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div>
+        <i class="fa fas fa-phone"></i>
+        <input
+          type="number"
+          class="number"
+          id="number"
+          name="number"
+          placeholder="Phone Number"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <span id="error"></span>
+      <button id="submit">SIGN UP</button>
+      <label>Already a Member? <a href="login.html">Sign in</a></label>
+    </form>
+  </body>
+  <script src="JS/signup.js"></script>
+</html>

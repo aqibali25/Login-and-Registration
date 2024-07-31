@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="CSS/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <form id="loginForm" action="">
+      <div>
+        <i class="fa fa-user"></i>
+        <input
+          type="text"
+          class="username"
+          id="username"
+          placeholder="Username"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div>
+        <i class="fa fa-lock"></i>
+        <input
+          type="password"
+          class="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+        <i class="fa-solid fas fa-eye-slash" id="eye"></i>
+      </div>
+      <div class="forgot">
+        <a href="#" id="forgotpassword">Forgot Password?</a>
+      </div>
+      <span id="error"></span>
+      <button type="button" onclick="login()">SIGN IN</button>
+      <label>Not a Member? <a href="index.html">Register</a></label>
+    </form>
+  </body>
+  <script src="JS/login.js"></script>
+</html>

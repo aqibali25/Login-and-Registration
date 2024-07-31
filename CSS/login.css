@@ -1,0 +1,145 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e3339;
+  font-family: Verdana;
+}
+body > label {
+  position: absolute;
+  top: 10px;
+  right: 110px;
+  font-weight: 550;
+}
+body #toggle {
+  position: absolute;
+  top: 15px;
+  right: 65px;
+  color: #787d8b;
+  cursor: pointer;
+}
+body #toggle-text {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-weight: 550;
+}
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  margin-left: 25px;
+  margin-right: 25px;
+  height: fit-content;
+  width: fit-content;
+}
+form div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+form div input {
+  height: 54px;
+  width: 90%;
+  padding-left: 20px;
+  margin-top: 15px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #3c404b;
+  outline: none;
+  font-size: 20px;
+  color: #9da1ab;
+}
+form div i {
+  background-color: #393b41;
+  color: #787d8b;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+}
+form #eye {
+  background-color: #3c404b;
+  position: absolute;
+  left: 90%;
+  padding: 0;
+  cursor: pointer;
+}
+button {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #270bbf;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+label {
+  margin-top: 10px;
+  color: #8c93a5;
+  letter-spacing: -1px;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.forgetpass {
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  left: 27%;
+  top: 30%;
+  background-color: #787d8b;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #343434;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.forgetpass h1 {
+  position: relative;
+  font-size: 1.8rem;
+  padding-left: 20px;
+}
+.forgetpass p {
+  position: relative;
+  width: 100%;
+  font-size: 1.2rem;
+  color: #000000;
+  text-align: left;
+  padding: 15px;
+  border-top: 1px solid #343434;
+  border-bottom: 1px solid #343434;
+}
+.forgetpass button {
+  position: relative;
+  left: 5%;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  font-size: 1.1rem;
+  background-color: #656565;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#error {
+  position: relative;
+  color: red;
+  font-size: 18px;
+}
